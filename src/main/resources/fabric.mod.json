@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "fauna",
+	"version": "${version}",
+	"name": "Fauna",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Frogipher"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "All Rights Reserved",
+	"icon": "assets/fauna/fauna_icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.frogipher.fauna.Fauna"
+		],
+		"fabric-datagen": [
+			"net.frogipher.fauna.FaunaDataGenerator"
+		],
+		"client": [
+			"net.frogipher.fauna.FaunaClient"
+		]
+	},
+	"mixins": [
+		"fauna.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
